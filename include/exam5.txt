@@ -1,0 +1,133 @@
+<?PHP
+function error($message){
+	print "<font color='red'>$message</font><br>";
+}
+
+$data_path = pathinfo(__FILE__,PATHINFO_DIRNAME);
+$doc = new DOMDocument();
+$doc->load("$data_path/data.xml");
+$questions = $doc->getElementsByTagname("question");
+
+//PHP4 script using domxml extension
+//We want to make it run on PHP5 with dom
+if (version_compare(PHP_VERSION,'5','>='))
+ require_once('domxml-php4-to-php5.php'); //Load the PHP5 converter
+
+function genQuestion($id, $wrap = false){
+	global $questions;
+	foreach ($questions as $question){
+		if ($id == $question->getAttribute("id")){
+			$type = $question->getAttribute("type");
+			switch ($type){
+				case "single":
+					genSingle($question, $wrap);
+					break;
+				case "gap":
+					genGap($question);
+					break;
+				case "gap2":
+					genGap2($question);
+					break;
+				case "drop":
+					genDrop($question);
+					break;
+				case "drag":
+					genDrag($question);
+					break;
+				case "gapx":
+					genGapx($question);
+				default: 
+					error("Type ($type) of question $id is not defined.!");
+					die();
+			}
+			return;
+		}
+	}
+	error("Question $id not found!");
+	die();
+}
+
+function genQuestionText($id){
+	global $questions;
+	foreach ($questions as $question){
+		if ($id == $question->getAttribute("id")){
+			$txt = $question->getAttribute("qtext");
+			$txt = mb_convert_encoding($txt,"ISO-8859-1","UTF-8");
+			print ("<span class='qtext'>$txt</span>");
+			break;
+		}
+	}
+}
+
+function genSingle($question, $wrap = false){
+	$choices = $question->getElementsByTagname("choice");
+	$id = $question->getAttribute("id");
+	print ("<input type='hidden' name='$id' value='0'>\n");
+	$user_answer = $_SESSION["user_answer"][$id];
+	for ($i=0; $i<$choices->length; $i++){
+		if ($wrap)
+			print ("<br>");
+		$choice = $choices->item($i);
+		$j = $i+1;
+		if ($user_answer == $j)
+			print ("<input type='radio' name='$id' value='$j' checked>");
+		else
+			print ("<input type='radio' name='$id' value='$j'>");
+		$txt = mb_convert_encoding($choice->nodeValue,"ISO-8859-1","UTF-8");
+		print ("<span>$txt</span>\n");
+	}
+	print "\n";
+	return;
+}
+
+function genGap($question){
+	$choices = $question->getElementsByTagname("choice");
+	$id = $question->getAttribute("id");
+	print ("<select name='$id' class='gap'>\n");
+	print ("<option value='0'></option>\n");
+	for ($i=0; $i<$choices->length; $i++){
+		$selected_text = "";
+		$choice = $choices->item($i);
+		$j = $i+1;
+		if ($j ==  $_SESSION["user_answer"][$id])
+			$selected_text="selected";
+		$content = mb_convert_encoding($choice->nodeValue,"ISO-8859-1","UTF-8");
+		print ("<option value='$j' $selected_text>". $content ."</option>\n");
+	}
+	print ("</select>\n");
+}
+
+function genGapx($question){
+	$id = $question->get_attribute("id");
+	$user_answer = $_SESSION["user_answer"][$id];
+	print ("<input name='$id' type='text' class='gapx' size='20' value='$user_answer'>\n");
+}
+
+//user have no choices to use but must fill the gap manuelly
+//so it just generats a input box for the user
+function genGap2($question){
+	$id = $question->getAttribute("id");
+	$user_answer = $_SESSION["user_answer"][$id];
+	print ("<input name='$id' type='text' class='gap2' size='30' value='$user_answer'>\n");
+}
+
+function genDrop($question){
+	$id = $question->getAttribute("id");
+	$user_answer = $_SESSION["user_answer"][$id];
+	print ("<input name='$id' type='text' class='dropItem' size='20' value='$user_answer'>");
+}
+
+function genDrag($question){
+	$choices = $question->getElementsByTagname("choice");
+	$id = $question->getAttribute("id");
+	for ($i=0; $i<$choices->length; $i++){
+		$choice = $choices->item($i);
+		$choice_content = mb_convert_encoding($choice->nodeValue,"ISO-8859-1","UTF-8");
+		$drag_id = "$id_$i";
+		$move_id = "$drag_id" . "_dragging";
+		print("<span class='dragItem' id='$drag_id'>$choice_content</span>\n");
+		print("<span class='moveItem' id='$move_id'>$choice_content</span>\n\n");
+	}
+}
+
+?>

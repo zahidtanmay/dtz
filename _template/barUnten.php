@@ -1,0 +1,10 @@
+<input name="Seite1" type="button" class="<?php checkfertig($_SESSION['fertig_S1']); ?>" value="H1" onClick="location.href='../HV/hoeren1.php'"/>
+<input name="Seite2" type="button" class="<?php checkfertig($_SESSION['fertig_S2']); ?>" value="H2" onClick="location.href='../HV/hoeren2.php'"/>
+<input name="Seite3" type="button" class="<?php checkfertig($_SESSION['fertig_S3']); ?>" value="H3" onClick="location.href='../HV/hoeren3.php'"/>
+<input name="Seite4" type="button" class="<?php checkfertig($_SESSION['fertig_S4']); ?>" value="H4" onClick="location.href='../HV/hoeren4.php'"/>&nbsp;
+<input name="Seite5" type="button" class="<?php checkfertig($_SESSION['fertig_S5']); ?>" value="L1" onClick="location.href='../LV/lesen1.php'"/>
+<input name="Seite6" type="button" class="<?php checkfertig($_SESSION['fertig_S6']); ?>" value="L2" onClick="location.href='../LV/lesen2.php'"/>
+<input name="Seite7" type="button" class="<?php checkfertig($_SESSION['fertig_S7']); ?>" value="L3" onClick="location.href='../LV/lesen3.php'"/>
+<input name="Seite8" type="button" class="<?php checkfertig($_SESSION['fertig_S8']); ?>" value="L4" onClick="location.href='../LV/lesen4.php'"/>
+<input name="Seite9" type="button" class="<?php checkfertig($_SESSION['fertig_S9']); ?>" value="L5" onclick="location.href='../LV/lesen5.php'"/>&nbsp;
+<input name="Seite0" type="button" class="<?php checkfertig($_SESSION['fertig_S0']); ?>" value="S" onclick="location.href='../TP/schreiben1.php'"/>

@@ -1,0 +1,373 @@
+<?xml version='1.0' standalone='yes'?>
+<data>
+<question id='11' type='single' points='1'>
+  <qtext></qtext>
+  <choice>a Den Stromzähler ablesen.</choice>
+  <choice>b Die Stromrechnung bezahlen.</choice>
+  <choice>c Einen neuen Termin machen.</choice>
+  <solution>3</solution>
+</question>
+<question id='12' type='single' points='1'>
+  <qtext></qtext>
+  <choice>a In den Kindergarten.</choice>
+  <choice>b Zur Agentur für Arbeit.</choice>
+  <choice>c Zur Schule.</choice>
+  <solution>2</solution>
+</question>
+<question id='13' type='single' points='1'>
+  <qtext></qtext>
+  <choice>a Ins Krankenhaus.</choice>
+  <choice>b Zum Arzt.</choice>
+  <choice>c Zum Gesundheitsamt.</choice>
+  <solution>2</solution>
+</question>
+<question id='14' type='single' points='1'>
+  <qtext></qtext>
+  <choice>a Bei der Polizei.</choice>
+  <choice>b Bei einem Autohändler.</choice>
+  <choice>c In der Werkstatt.</choice>
+  <solution>3</solution>
+</question>
+
+<question id='15' type='single' points='1'>
+  <qtext>Was hören Sie?</qtext>
+  <choice>a Das Horoskop.</choice>
+  <choice>b Den Wetterbericht.</choice>
+  <choice>c Die Sportnachrichten.</choice>
+  <solution>1</solution>
+</question>
+<question id='16' type='single' points='1'>
+  <qtext>Wie wird das Wetter in Norddeutschland?</qtext>
+  <choice>a fahren mit Verspätung.</choice>
+  <choice>b fahren wie immer.</choice>
+  <choice>c werden durch Busse ersetzt.</choice>
+  <solution>3</solution>
+</question>
+<question id='17' type='single' points='1'>
+  <qtext>Wo laufen Leute auf der Straße?</qtext>
+  <choice>a Man muss beim Sender anrufen.</choice>
+  <choice>b Man muss sich auf der Internetseite anmelden.</choice>
+  <choice>c Man schreibt eine Postkarte.</choice>
+  <solution>1</solution>
+</question>
+<question id='18' type='single' points='1'>
+  <qtext>Wie bekommt man die Karten?</qtext>
+  <choice>a Auf der A 7.</choice>
+  <choice>b Auf der A 8.</choice>
+  <choice>c Auf der A 96.</choice>
+  <solution>3</solution>
+</question>
+<question id='19' type='single' points='1'>
+  <qtext>Was sollen Sie tun?</qtext>
+  <choice>a Es gibt Regen.</choice>
+  <choice>b Es gibt Schnee.</choice>
+  <choice>c Es wird sonnig.</choice>
+  <solution>3</solution>
+</question>
+
+<question id='110' type='single' points='1'>
+  <qtext>Das Gespräch findet in Norwegen statt.</qtext>
+  <choice>Richtig</choice>
+  <choice>Falsch</choice>
+  <solution>2</solution>
+</question>
+<question id='111' type='single' points='1'>
+  <qtext>Worum bittet Herr Jansen Frau Samsonov?</qtext>
+  <choice>a Sie soll auf das Haus von Familie Jansen aufpassen.</choice>
+  <choice>b Sie soll Herrn Jansen den Schlüssel geben.</choice>
+  <choice>c Sie soll sich um die Katzen von Familie Jansen kümmern.</choice>
+  <solution>3</solution>
+</question>
+<question id='112' type='single' points='1'>
+  <qtext>Frau Baier und Herr Steiner sind Kollegen.</qtext>
+  <choice>Richtig</choice>
+  <choice>Falsch</choice>
+  <solution>2</solution>
+</question>
+<question id='113' type='single' points='1'>
+  <qtext>Was macht Frau Baier?</qtext>
+  <choice><strong>a</strong> Sie kauft die Wohnung.</choice>
+  <choice>b Sie mietet die Wohnung.</choice>
+  <choice>c Sie will ihrem Mann von der Wohnung erzählen.</choice>
+  <solution>3</solution>
+</question>
+<question id='114' type='single' points='1'>
+  <qtext>Frau Melnik telefoniert mit dem Lehrer ihrer Tochter.</qtext>
+  <choice>Richtig</choice>
+  <choice>Falsch</choice>
+  <solution>1</solution>
+</question>
+<question id='115' type='single' points='1'>
+  <qtext>Was kann Frau Melnik nicht so gut?</qtext>
+  <choice>a Einladungen schreiben.</choice>
+  <choice>b Getränke verkaufen.</choice>
+  <choice>c Kuchen backen.</choice>
+  <solution>3</solution>
+</question>
+<question id='116' type='single' points='1'>
+  <qtext>Frau Keller ist in einem Lebensmittelgeschäft.</qtext>
+  <choice>Richtig</choice>
+  <choice>Falsch</choice>
+  <solution>2</solution>
+</question>
+<question id='117' type='single' points='1'>
+  <qtext>Wie viel kosten die Medikamente?</qtext>
+  <choice>a 20,00 Euro</choice>
+  <choice>b 18,50 Euro</choice>
+  <choice>c 1,50 Euro</choice>
+  <solution>2</solution>
+</question>
+
+<question id='118' type='single' points='1'>
+	<choice>a</choice>
+	<choice>b</choice>
+	<choice>c</choice>
+	<choice>d</choice>
+	<choice>e</choice>
+	<choice>f</choice>
+  <solution>5</solution>
+</question>
+
+<question id='119' type='single' points='1'>
+	<choice>a</choice>
+	<choice>b</choice>
+	<choice>c</choice>
+	<choice>d</choice>
+	<choice>e</choice>
+	<choice>f</choice>
+  <solution>1</solution>
+</question>
+
+<question id='120' type='single' points='1'>
+	<choice>a</choice>
+	<choice>b</choice>
+	<choice>c</choice>
+	<choice>d</choice>
+	<choice>e</choice>
+	<choice>f</choice>
+  <solution>4</solution>
+</question>
+
+<question id='121' type='single' points='1'>
+	<choice>18</choice>
+	<choice>19</choice>
+	<choice>20</choice>
+  <solution>3</solution>
+</question>
+
+<question id='122' type='single' points='0'>
+	<choice>18</choice>
+	<choice>19</choice>
+	<choice>20</choice>
+  <solution>3</solution>
+</question>
+
+<question id='21' type='single' points='1'>
+  <qtext>Die Gruppe Ztohoven</qtext>
+  <choice>a 210</choice>
+  <choice>b 211</choice>
+  <choice>c anderes Zimmer</choice>
+  <solution>1</solution>
+</question>
+<question id='22' type='single' points='1'>
+  <qtext>Die Atombombe</qtext>
+  <choice>a 111</choice>
+  <choice>b 112</choice>
+  <choice>c anderes Zimmer</choice>
+  <solution>2</solution>
+</question>
+<question id='23' type='single' points='1'>
+  <qtext>Nur wenige Zuschauer</qtext>
+  <choice>a 113</choice>
+  <choice>b 115</choice>
+  <choice>c anderes Zimmer</choice>
+  <solution>1</solution>
+</question>
+<question id='24' type='single' points='1'>
+  <qtext>Die jungen Männer</qtext>
+  <choice>a 111</choice>
+  <choice>b 211</choice>
+  <choice>c anderes Zimmer</choice>
+  <solution>1</solution>
+</question>
+<question id='25' type='single' points='1'>
+  <qtext>Der junge Tscheche Roman Tyc</qtext>
+  <choice>a 111</choice>
+  <choice>b 112</choice>
+  <choice>c anderes Zimmer</choice>
+  <solution>3</solution>
+</question>
+
+
+<question id='26' type='single' points='1'>
+  <qtext></qtext>
+  <choice>a</choice>
+  <choice>b</choice>
+  <choice>c</choice>
+  <choice>d</choice>
+  <choice>e</choice>
+  <choice>f</choice>
+  <choice>g</choice>
+  <choice>h</choice>
+  <choice>X</choice>
+  <solution>6</solution>
+</question>
+<question id='27' type='single' points='1'>
+  <qtext></qtext>
+  <choice>a</choice>
+  <choice>b</choice>
+  <choice>c</choice>
+  <choice>d</choice>
+  <choice>e</choice>
+  <choice>f</choice>
+  <choice>g</choice>
+  <choice>h</choice>
+  <choice>X</choice>
+  <solution>1</solution>
+</question>
+<question id='28' type='single' points='1'>
+  <qtext></qtext>
+  <choice>a</choice>
+  <choice>b</choice>
+  <choice>c</choice>
+  <choice>d</choice>
+  <choice>e</choice>
+  <choice>f</choice>
+  <choice>g</choice>
+  <choice>h</choice>
+  <choice>X</choice>
+  <solution>2</solution>
+</question>
+<question id='29' type='single' points='1'>
+  <qtext></qtext>
+  <choice>a</choice>
+  <choice>b</choice>
+  <choice>c</choice>
+  <choice>d</choice>
+  <choice>e</choice>
+  <choice>f</choice>
+  <choice>g</choice>
+  <choice>h</choice>
+  <choice>X</choice>
+  <solution>5</solution>
+</question>
+<question id='210' type='single' points='1'>
+  <qtext></qtext>
+  <choice>a</choice>
+  <choice>b</choice>
+  <choice>c</choice>
+  <choice>d</choice>
+  <choice>e</choice>
+  <choice>f</choice>
+  <choice>g</choice>
+  <choice>h</choice>
+  <choice>X</choice>
+  <solution>9</solution>
+</question>
+
+<question id='211' type='single' points='1'>
+  <qtext></qtext>
+  <choice>Richtig</choice>
+  <choice>Falsch</choice>
+  <solution>2</solution>
+</question>
+<question id='212' type='single' points='1'>
+  <qtext></qtext>
+  <choice>a braucht man viel Zeit und Ausdauer.</choice>
+  <choice>b muss man ins Internet gehen.</choice>
+  <choice>c muss man sehr sportlich sein.</choice>
+  <solution>2</solution>
+</question>
+<question id='213' type='single' points='1'>
+  <qtext></qtext>
+  <choice>Richtig</choice>
+  <choice>Falsch</choice>
+  <solution>2</solution>
+</question>
+<question id='214' type='single' points='1'>
+  <qtext></qtext>
+  <choice>a den ganzen Weg zur Schule langsam fahren.</choice>
+  <choice>b ihre Kinder immer begleiten.</choice>
+  <choice>c mit ihren Kindern den Schulweg üben.</choice>
+  <solution>3</solution>
+</question>
+<question id='215' type='single' points='1'>
+  <qtext></qtext>
+  <choice>Richtig</choice>
+  <choice>Falsch</choice>
+  <solution>1</solution>
+</question>
+<question id='216' type='single' points='1'>
+  <qtext></qtext>
+  <choice>a wenn er an dem Tag nicht zu Hause ist.</choice>
+  <choice>b wenn er Informationen zu seinem TV- und Radioempfang braucht.</choice>
+  <choice>c wenn er keinen neuen Anschluss möchte.</choice>
+  <solution>1</solution>
+</question>
+
+
+<question id='217' type='single' points='1'>
+  <qtext></qtext>
+  <choice>Richtig</choice>
+  <choice>Falsch</choice>
+  <solution>2</solution>
+</question>
+<question id='218' type='single' points='1'>
+  <qtext></qtext>
+  <choice>Richtig</choice>
+  <choice>Falsch</choice>
+  <solution>2</solution>
+</question>
+<question id='219' type='single' points='1'>
+  <qtext></qtext>
+  <choice>Richtig</choice>
+  <choice>Falsch</choice>
+  <solution>1</solution>
+</question>
+
+
+<question id='220' type='gap' points='1'>
+  <qtext></qtext>
+  <choice>euch</choice>
+  <choice>ihnen</choice>
+  <choice>uns</choice>
+  <solution>3</solution>
+</question>
+<question id='221' type='gap' points='1'>
+  <qtext></qtext>
+  <choice>können</choice>
+  <choice>müssen</choice>
+  <choice>sollen</choice>
+  <solution>1</solution>
+</question>
+<question id='222' type='gapc' points='1'>
+  <qtext>22</qtext>
+  <choice>Haben</choice>
+  <choice>Hätten</choice>
+  <choice>Würden</choice>
+  <solution>1</solution>
+</question>
+<question id='223' type='gapc' points='1'>
+  <qtext>23</qtext>
+  <choice>letzten</choice>
+  <choice>nächsten</choice>
+  <choice>vorigen</choice>
+  <solution>2</solution>
+</question>
+<question id='224' type='gapc' points='1'>
+  <qtext>24</qtext>
+  <choice>erst</choice>
+  <choice>schon</choice>
+  <choice>wieder</choice>
+  <solution>2</solution>
+</question>
+<question id='225' type='gapc' points='1'>
+  <qtext>25</qtext>
+  <choice>Damit</choice>
+  <choice>Dann</choice>
+  <choice>Sonst</choice>
+  <solution>2</solution>
+</question>
+  
+  
+</data>
