@@ -1,5 +1,6 @@
 <?php include("../partials/header.php") ?>
-
+<?php echo $_SESSION['q10'];echo $_SESSION['q11'];echo $_SESSION['q12'];echo $_SESSION['q13'];
+echo $_SESSION['q14']; echo $_SESSION['q15'];echo $_SESSION['q16'];echo $_SESSION['q17']; ?>
     <div class="clear"></div>
     <div class="decoration add_cell"></div>
 
@@ -92,6 +93,7 @@
      <div class="clear cell5"></div>
      <div class="decoration"></div>
 
+<form>
 
      <!--18question-->
      <div class="segment_h">
@@ -155,10 +157,57 @@
      </div>
      <div class="clear"></div>
      <div class="decoration"></div>
-
+  
+</form>
     </div>
    </div>
   </div>
  </div>
+ <script>
+  $(function(){
+    function showValues() {
+      jQuery.ajax({
+        type: "POST",
+        data:  $( "form" ).serialize(),
+
+        success: function(data){
+          console.log('value');
+        }
+      });
+    }
+    $( "input[type='checkbox'], input[type='radio']" ).on( "click", showValues );
+    $( "select" ).on( "change", showValues );
+    showValues(); 
+  });
+</script>
+<?php
+
+if(isset($_POST['q18']))
+{
+  if($_POST['q18'] == 5){
+    $_SESSION['q18']=1;
+  }else{
+    $_SESSION['q18']=0;
+  }
+}
+
+if(isset($_POST['q19']))
+{
+  if($_POST['q19'] == 1){
+    $_SESSION['q19']=1;
+  }else{
+    $_SESSION['q19']=0;
+  }
+}
+if(isset($_POST['q20']))
+{
+  if($_POST['q20'] == 4){
+    $_SESSION['q20']=1;
+  }else{
+    $_SESSION['q20']=0;
+  }
+}
+
+?>
  <!--Footer Button-->
  <?php include("../partials/footer.php") ?>

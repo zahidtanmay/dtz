@@ -40,11 +40,11 @@
 
 <div class="cell_hoeren1">
  <p class="question_cell1"><b>1.&nbsp;</b> &nbsp;Was soll Herr Matuschek machen?</p>
- <select name="q1" class="select_cell1">
+<select name="sweets" class="select_cell1">
    <option value="1" selected="selected">Den Stromz&auml;hler ablesen</option>
    <option value="2">Die Stromrechnung bezahlen.</option>
    <option value="3">Einen neuen Termin machen.</option>
- </select>
+</select>
 </div>
 <div class="clear"></div>
 <div class="decoration"></div>
@@ -52,7 +52,7 @@
 <!--2 question -->
 <div class="cell_hoeren1">
  <p class="question_cell1"><b>2.&nbsp;</b> Wohin soll Frau B&ouml;hmer kommen?.</p>
- <select name="q2" id="q2" class="select_cell1">
+ <select action="php/contact.php" id="q2" class="select_cell1">
   <option value="1" value="horen2a">In den Kindergarten.</option>
   <option value="2">Zur Agentur f&uuml;r Arbeit.</option>
   <option value="3">Zur Schule.</option>
@@ -63,7 +63,7 @@
 <!--3 question-->
 <div class="cell_hoeren1">
  <p class="question_cell1"><b>3.&nbsp</b> Wohin soll Herr Holstein mit seinem Sohn gehen?</p>
- <select name="q3" id="q3" class="select_cell1">
+ <select action="php/contact.php" id="q3" class="select_cell1">
   <option value="1">Ins Krankenhaus.</option>
   <option value="2">Zum Arzt.</option>
   <option value="3">Zum Gesundheitsamt.</option>
@@ -75,7 +75,7 @@
 <!--4 question-->
 <div class="cell_hoeren1">
  <p class="question_cell1"><b>4.&nbsp</b> Wo soll Herr Lee sein Auto abholen?</p>
- <select name="q4" id="q4" class="select_cell1">
+ <select action="php/contact.php" id="q4" class="select_cell1">
   <option value="1">Bei der Polizei.</option>
   <option value="2">Bei einem Autoh&auml;ndler.</option>
   <option value="3">In der Werkstatt.</option>
@@ -87,65 +87,51 @@
 </div>
 </div>
 </form>
+<form id="test-form" action="" method="POST">
+  <input type="hidden" name="test" id="test-input">
+</form>
 <!--Title Head-->
 <script>
+        $(function(){
+          $("select[name='sweets']").change(function () {
+          var str = "";
+          $("select[name='sweets'] option:selected").each(function () {
+                str += $(this).text() + " ";
 
-  $(function(){
-    $( "select" ).change(function(){
-      jQuery.ajax({
-        type: "POST",
-        data:  $( "form" ).serialize(),
+              });
 
-        success: function(data){
-          console.log('value');
-        }
-      }); 
-    });
+                jQuery.ajax({
+                type: "POST",
+                data:  $("form#a").serialize(),
+
+                success: function(data){
+                  console.log(str);
+                }
+                });  
+                
+        });
+        });
+        </script>
 
 
-  });
-</script>
-
-<div id="results"></div>
 <?php
-if(isset($_POST['q1']))
-{
-  if($_POST['q1'] == 3){
-    $_SESSION['q1']=1;
-  }else{
-    $_SESSION['q1']=0;
-  }
-}
-
-if(isset($_POST['q2']))
-{
-  if($_POST['q2'] == 2){
-    $_SESSION['q2']=1;
-  }else{
-    $_SESSION['q2']=0;
-  }
-}
-
-if(isset($_POST['q3']))
-{
-  if($_POST['q3'] == 2){
-    $_SESSION['q3']=1;
-  }else{
-    $_SESSION['q3']=0;
-  }
-}
-
-if(isset($_POST['q4']))
-{
-  if($_POST['q4'] == 3){
-    $_SESSION['q4']=1;
-  }else{
-    $_SESSION['q4']=0;
-  }
-}
-
-
+    if(isset($_POST['sweets']))
+    {
+      if($_POST['sweets'] == 3){
+        $_SESSION['sweets']=1;
+      }else{
+        $_SESSION['sweets']=0;
+      }
+    }
 ?>
 
 <!--Footer Button-->
 <?php include("../partials/footer.php"); ?>
+
+function showValues() {
+    var str = $( "form" ).serialize();
+    $( "#results" ).text( str );
+  }
+  $( "input[type='checkbox'], input[type='radio']" ).on( "click", showValues );
+  $( "select" ).on( "change", showValues );
+  showValues();
