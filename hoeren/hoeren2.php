@@ -1,3 +1,4 @@
+<?php $test_part = 'H&ouml;ren Teil 2'; $time_text = 'H&ouml;ren insgesamt 45 Minuten'; ?>
 <?php include("../partials/header.php") ?>
 <?php echo $_SESSION['q1'];echo $_SESSION['q2'];echo $_SESSION['q3'];echo $_SESSION['q3']; ?>
      <div class="clear"></div>
@@ -13,12 +14,14 @@
      <div class="clear"></div>
      <div class="decoration"></div>
      <!--Audio Play 14%-->
-     <div class="cell_hoeren1 ">
-      <button type="button" id="audio" class="audio_bt fa fa-play"></button>
-      <audio id="myaudio">
-       <source src="audio/hv2.mp3" type="audio/mpeg">
-      </audio>
-      <a class="button_tit"><b>Abspielen</b></a>
+     <div class="title_cell">
+ <button type="button" id="audio" class="audio_bt fa fa-play" 
+ onclick="document.getElementById('myaudio').play()"></button>
+ <audio id="myaudio">
+  <source src="../audio/hv2.mp3" type="audio/mpeg">
+</audio>
+  <a class="button_tit"><b> Abspielen </b></a>
+  <!--Timer Counter-->
 </div>
 <form>
   <div class="clear"></div>
@@ -28,6 +31,7 @@
      <div class="cell_hoeren1">
       <p class="question_cell1"><b>5.&nbsp</b>Was h&ouml;ren Sie?</p>
       <select name="q5" id="q5" class="select_cell1">
+      <option>wählen</option>
        <option value="1"> Das Horoskop.</option>
        <option value="2"> Den Wetterbericht.</option>
        <option value="3"> Die Sportnachrichten.</option>
@@ -40,6 +44,7 @@
      <div class="cell_hoeren1">
       <p class="question_cell1"><b>6.&nbsp</b> Die Z&uuml;ge ...</p>
       <select name="q6" id="q6" class="select_cell1">
+      <option>wählen</option>
        <option value="1"> fahren mit Verspätung.</option>
        <option value="2">fahren wie immer.</option>
        <option value="3"> werden durch Busse ersetzt.</option>
@@ -52,6 +57,7 @@
      <div class="cell_hoeren1">
       <p class="question_cell1"><b>7.&nbsp</b> Wie macht man bei dem Gewinnspiel mit?</p>
       <select name="q7" id="q7" class="select_cell1">
+      <option>wählen</option>
        <option value="1"> Man muss beim Sender anrufen.</option>
        <option value="2"> Man muss sich auf der Internetseite anmelden.</option>
        <option value="3"> Man schreibt eine Postkarte.</option>
@@ -64,6 +70,7 @@
      <div class="cell_hoeren1">
       <p class="question_cell1"><b>8.&nbsp</b> Wo fährt der Falschfahrer?</p>
       <select name="q8" id="q8" class="select_cell1">
+      <option>wählen</option>
        <option value="1"> Auf der A 7.</option>
        <option value="2"> Auf der A 8.</option>
        <option value="3"> Auf der A 96.</option>
@@ -75,6 +82,7 @@
      <div class="cell_hoeren1">
       <p class="question_cell1"><b>9.&nbsp</b> Wie wird das Wetter in Westdeutschland?</p>
       <select name="q9" id="q9" class="select_cell1">
+      <option>wählen</option>
        <option value="1"> Es gibt Regen.</option>
        <option value="2"> Es gibt Schnee.</option>
        <option value="3"> Es wird sonnig.</option>

@@ -11,7 +11,7 @@
     <a href="../lesen/lesen3.php" class="button button-teal button-round">Lesen 3</a>
     <a href="../lesen/lesen4.php" class="button button-teal button-round">Lesen 4</a>
     <a href="../lesen/lesen5.php" class="button button-teal button-round">Lesen 5</a>
-    <a href=".../schreiben/schreiben.php" class="button button-blue button-round">Schreiben</a>
+    <a href="../schreiben/schreiben.php" class="button button-blue button-round">Schreiben</a>
     <a href="#" id="result" class="button button-blue button-round">Bewerten</a>
     <a href="#" class="button button-red button-round hoeren_btn">Weiter</a>
     <a href="../end.php" class="button button-red button-round">Ende</a>
@@ -27,3 +27,4 @@
 
 </body>
 <!-- <script type="text/javascript" src="scripts/hoeren3.js"></script> -->
+</html>

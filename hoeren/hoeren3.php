@@ -1,3 +1,4 @@
+<?php $test_part = 'H&ouml;ren Teil 3'; $time_text = 'H&ouml;ren insgesamt 45 Minuten'; ?>
 <?php include("../partials/header.php") ?>
 <?php echo $_SESSION['q5'];echo $_SESSION['q6'];echo $_SESSION['q7'];echo $_SESSION['q8'];
 echo $_SESSION['q9']; ?>
@@ -16,9 +17,9 @@ echo $_SESSION['q9']; ?>
 <div class="decoration"></div>
 <!--Audio Play 14%-->
 <div class="cell_hoeren1">
- <button type="button" id="audio" class="audio_bt fa fa-play"></button>
+ <button type="button" id="audio" class="audio_bt fa fa-play" onclick="document.getElementById('myaudio').play()"></button>
  <audio id="myaudio">
-  <source src="audio/hv3.mp3" type="audio/mpeg">
+  <source src="../audio/hv3.mp3" type="audio/mpeg">
   </audio>
   <a class="button_tit"><b>Abspielen</b></a>
   <!--Timer Counter-->
@@ -69,6 +70,7 @@ echo $_SESSION['q9']; ?>
  <div class="half_right remove_cell">
   <p class="cell_left2"><b>11.&nbsp</b> Worum bittet Herr Jansen Frau Samsonov?</p>
   <select name="q11" id="q11" class="select_right1">
+  <option>wählen</option>
    <option value="1">Sie soll auf das Haus von Familie Jansen aufpassen.</option>
    <option value="2">Sie soll Herrn Jansen den Schl&uuml;ssel geben.</option>
    <option value="3">Sie soll sich um die Katzen von Familie Jansen k&uuml;mmern.</option>
@@ -95,6 +97,7 @@ echo $_SESSION['q9']; ?>
 <div class="half_right remove_cell">
   <p class="cell_left2"><b>13.&nbsp</b> Was macht Frau Baier?</p>
   <select name="q13" id="q13" class="select_right1">
+  <option>wählen</option>
    <option value="1">Sie kauft die Wohnung.</option>
    <option value="2">Sie mietet die Wohnung.</option>
    <option value="3">Sie will ihrem Mann von der Wohnung erz&auml;hlen.</option>
@@ -120,6 +123,7 @@ echo $_SESSION['q9']; ?>
 <div class="half_right remove_cell">
   <p class="cell_left2"><b>15.&nbsp</b> Was kann Frau Melnik nicht so gut?</p>
   <select name="q15" id="q15" class="select_right1">
+  <option>wählen</option>
    <option value="1">Einladungen schreiben.</option>
    <option value="2">Getr&auml;nke verkaufen.</option>
    <option value="3">Kuchen backen.</option>
@@ -147,6 +151,7 @@ echo $_SESSION['q9']; ?>
 <div class="half_right remove_cell">
   <p class="cell_left2"><b>17.&nbsp</b> Wie viel kosten die Medikamente?</p>
   <select name="q17" id="q17" class="select_right1">
+  <option>wählen</option>
    <option value="1">20,00 Euro</option>
    <option value="2">18,50 Euro</option>
    <option value="3">1,50 Euro</option>

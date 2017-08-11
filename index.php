@@ -6,7 +6,7 @@
  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 
- <title>Epsilon 4.0</title>
+ <title>Prüfung Deutsch für Zuwanderer</title>
 
  <link href="styles/style.css" rel="stylesheet" type="text/css">
  <link href="styles/framework.css" rel="stylesheet" type="text/css">

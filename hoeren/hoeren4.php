@@ -1,3 +1,4 @@
+<?php $test_part = 'H&ouml;ren Teil 4'; $time_text = 'H&ouml;ren insgesamt 45 Minuten'; ?>
 <?php include("../partials/header.php") ?>
 <?php echo $_SESSION['q10'];echo $_SESSION['q11'];echo $_SESSION['q12'];echo $_SESSION['q13'];
 echo $_SESSION['q14']; echo $_SESSION['q15'];echo $_SESSION['q16'];echo $_SESSION['q17']; ?>
@@ -15,9 +16,9 @@ echo $_SESSION['q14']; echo $_SESSION['q15'];echo $_SESSION['q16'];echo $_SESSIO
     <div class="decoration"></div>
     <!--Audio Play 14%-->
     <div class="head_title">
-     <button type="button" id="audio" class="audio_bt fa fa-play audio_low"></button>
+     <button type="button" id="audio" class="audio_bt fa fa-play audio_low" onclick="document.getElementById('myaudio').play()"></button>
      <audio id="myaudio">
-      <source src="audio/hv4.mp3" type="audio/mpeg">
+      <source src="../audio/hv4.mp3" type="audio/mpeg">
      </audio>
      <a class="button_tit audio_add"><b>Abspielen</b></a>
 
