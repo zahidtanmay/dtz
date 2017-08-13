@@ -1,4 +1,4 @@
-<?php $test_part = 'Lesen Teil 1'; $time_text = 'Lesen insgesamt 45 Minuten';?>
+<?php $page_session = 5; $page = 'lesen_1'; $test_part = 'Lesen Teil 1'; $time_text = 'Lesen insgesamt 45 Minuten';?>
 <?php include("../partials/header.php"); ?>
      <div class="clear"></div>
      <div class="decoration"></div>

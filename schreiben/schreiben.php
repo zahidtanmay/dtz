@@ -1,7 +1,5 @@
-<?php $test_part = 'Schreiben'; $time_text = '25 Minuten'; ?>
+<?php $page_session = 10; $page = 'schreiben'; $test_part = 'Schreiben'; $time_text = '25 Minuten'; ?>
 <?php include('../partials/header.php'); ?>
-<?php echo $_SESSION['ql2'];echo $_SESSION['ql3'];echo $_SESSION['ql4'];echo $_SESSION['ql5'];
-echo $_SESSION['ql6'];echo $_SESSION['ql7']; ?>
      <div class="clear"></div>
      <div class="decoration"></div>
     <div class="explain_box write_head">

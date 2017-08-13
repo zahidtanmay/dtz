@@ -1,9 +1,35 @@
 <?php session_start(); ?>
 <?php
-$_SESSION['q1'] = 0; $_SESSION['q2'] = 0; $_SESSION['q3']= 0; $_SESSION['q4'] = 0; $_SESSION['q5']= 0; $_SESSION['q6'] = 0; $_SESSION['q7']= 0; $_SESSION['q8'] = 0; $_SESSION['q9']= 0; $_SESSION['q10'] = 0; $_SESSION['q11']= 0; $_SESSION['q12']= 0; $_SESSION['q13']= 0; $_SESSION['q14'] = 0; $_SESSION['q15']= 0; $_SESSION['q16']= 0; $_SESSION['q17']= 0; $_SESSION['q18'] = 0; $_SESSION['q19']= 0; $_SESSION['q20']= 0;
 
-$_SESSION['q21']= 0;$_SESSION['q22'] = 0; $_SESSION['q23']= 0; $_SESSION['q24'] = 0; $_SESSION['q25']= 0; $_SESSION['q26'] = 0; $_SESSION['q27']= 0; $_SESSION['q28'] = 0; $_SESSION['q29']= 0; $_SESSION['q30'] = 0; $_SESSION['q31']= 0; $_SESSION['q32'] = 0; $_SESSION['q33']= 0; $_SESSION['q34'] = 0; $_SESSION['q35']= 0; $_SESSION['q36'] = 0; $_SESSION['q37']= 0; $_SESSION['q38'] = 0; $_SESSION['q39'] = 0; $_SESSION['ql2'] = 0; $_SESSION['ql3']= 0; $_SESSION['ql4']= 0;$_SESSION['ql5'] = 0; $_SESSION['ql6'] = 0;$_SESSION['ql7']= 0;
+if(!isset($_SESSION['q1'])){
+ $_SESSION['q1']= 0; $_SESSION['q2'] = 0; $_SESSION['q3']= 0; $_SESSION['q4'] = 0; 
+ $_SESSION['q5']= 0; $_SESSION['q6'] = 0; $_SESSION['q7']= 0; $_SESSION['q8'] = 0; 
+ $_SESSION['q9']= 0; $_SESSION['q10'] = 0; $_SESSION['q11']= 0; $_SESSION['q12']= 0; 
+ $_SESSION['q13']= 0; $_SESSION['q14'] = 0; $_SESSION['q15']= 0; $_SESSION['q16']= 0; 
+ $_SESSION['q17']= 0; $_SESSION['q18'] = 0; $_SESSION['q19']= 0; $_SESSION['q20']= 0;
+ $_SESSION['q21']= 0;$_SESSION['q22'] = 0; $_SESSION['q23']= 0; $_SESSION['q24'] = 0; 
+ $_SESSION['q25']= 0; $_SESSION['q26'] = 0; $_SESSION['q27']= 0; $_SESSION['q28'] = 0; 
+ $_SESSION['q29']= 0; $_SESSION['q30'] = 0; $_SESSION['q31']= 0; $_SESSION['q32'] = 0; 
+ $_SESSION['q33']= 0; $_SESSION['q34'] = 0; $_SESSION['q35']= 0; $_SESSION['q36'] = 0; 
+ $_SESSION['q37']= 0; $_SESSION['q38'] = 0; $_SESSION['q39'] = 0; $_SESSION['ql2'] = 0; 
+ $_SESSION['ql3']= 0; $_SESSION['ql4']= 0;$_SESSION['ql5'] = 0; $_SESSION['ql6'] = 0;
+ $_SESSION['ql7']= 0;
+}
 
+$_SESSION['s1'] = $_SESSION['q1'] + $_SESSION['q2'] + $_SESSION['q3'] + $_SESSION['q4']; 
+$_SESSION['s2'] =  $_SESSION['q5'] + $_SESSION['q6'] + $_SESSION['q7'] + $_SESSION['q8'] + $_SESSION['q9'];
+$_SESSION['s3'] = $_SESSION['q10'] + $_SESSION['q11'] + $_SESSION['q12'] + $_SESSION['q13'] + $_SESSION['q14'] + $_SESSION['q15'] + $_SESSION['q16'] + $_SESSION['q17']; 
+$_SESSION['s4'] =  $_SESSION['q18'] + $_SESSION['q19'] + $_SESSION['q20'];
+
+$_SESSION['s5'] = $_SESSION['q21'] + $_SESSION['q22'] + $_SESSION['q23'] + $_SESSION['q24'] + $_SESSION['q25'];
+$_SESSION['s6'] = $_SESSION['q26'] + $_SESSION['q27'] + $_SESSION['q28'] + $_SESSION['q29'] + $_SESSION['q30'];
+
+$_SESSION['s7'] = $_SESSION['q31'] + $_SESSION['q32'] + $_SESSION['q33'] + $_SESSION['q34'] + $_SESSION['q35'] + $_SESSION['q36'];
+
+$_SESSION['s8'] = $_SESSION['q37'] + $_SESSION['q38'] + $_SESSION['q39'];
+$_SESSION['s9'] = $_SESSION['ql2'] + $_SESSION['ql3'] + $_SESSION['ql4'] + $_SESSION['ql5'] + $_SESSION['ql6'] + $_SESSION['ql7'];
+
+$_SESSION['sum'] = $_SESSION['s1'] + $_SESSION['s2'] + $_SESSION['s3'] + $_SESSION['s4'] + $_SESSION['s5'] + $_SESSION['s6'] + $_SESSION['s7'] + $_SESSION['s8'] + $_SESSION['s8'] + $_SESSION['s9'];
 if(isset($_SESSION['start'])){
   $now = time(); // Checking the time now when home page starts.
 
@@ -52,6 +78,35 @@ if(isset($_SESSION['start'])){
   <script type="text/javascript" src="../scripts/framework-plugins.js"></script>
   <script type="text/javascript" src="../scripts/custom.js"></script>
   <script type="text/javascript">
+    $(document).ready(function(){
+      $("#button1").click(function(){
+        document.getElementById("image").src="../images/a.png";
+      });
+      $("#button2").click(function(){
+        document.getElementById("image").src="../images/b.png";
+      });
+      $("#button3").click(function(){
+        document.getElementById("image").src="../images/c.png";
+      });
+      $("#button4").click(function(){
+        document.getElementById("image").src="../images/d.png";
+      });
+      $("#button5").click(function(){
+        document.getElementById("image").src="../images/e.png";
+      });
+      $("#button6").click(function(){
+        document.getElementById("image").src="../images/f.png";
+      });
+      $("#button7").click(function(){
+        document.getElementById("image").src="../images/g.png";
+      });
+      $("#button8").click(function(){
+        document.getElementById("image").src="../images/h.png";
+      });
+      
+    });
+  </script>
+  <script type="text/javascript">
     function startTimer(duration, display) {
       var timer = duration;
       setInterval(function () {
@@ -62,7 +117,7 @@ if(isset($_SESSION['start'])){
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
-        display.textContent =hour +":" + minutes + ":" + seconds;
+        display.textContent = hour +":" + minutes + ":" + seconds;
 
         if (--timer < 0) {
           timer = duration;
@@ -75,6 +130,48 @@ if(isset($_SESSION['start'])){
       display = document.querySelector('#timer');
       startTimer(fiveMinutes, display);
     };
+  </script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+      $("#result").click(function(){
+        var str = $("form").serialize();
+        $.ajax({
+          type: 'GET',
+          data: str,
+          success: function() {
+            console.log(str);
+            var session = <?php echo(json_encode($page_session)); ?>;
+            var x = <?php echo(json_encode($_SESSION['q1'])); ?>;
+            console.log(x);
+
+            if(session == 1){
+              document.getElementById("s1").style.display="block";
+              document.getElementById("s1").textContent = x ;
+            }
+            else if(session == 2){
+              document.getElementById("s2").style.display="block";
+            }else if(session == 3){
+              document.getElementById("s3").style.display="block";
+              document.getElementById("s3").textContent = <?php echo(json_encode($_SESSION['s3'])); ?>;
+            }else if(session == 4){
+              document.getElementById("s4").style.display="block";
+            }else if(session == 5){
+              document.getElementById("s5").style.display="block";
+            }else if(session == 6){
+              document.getElementById("s6").style.display="block";
+            }else if(session == 7){
+              document.getElementById("s7").style.display="block";
+            }else if(session == 8){
+              document.getElementById("s8").style.display="block";
+            }else if(session == 9){
+              document.getElementById("s9").style.display="block";
+            }
+          }
+        });
+      });
+    });
   </script>
 </head>
 
@@ -175,6 +272,6 @@ if(isset($_SESSION['start'])){
 
               <div class="l2_head">
                <p class="head1"><b><?php echo $test_part; ?> </b> (<?php echo $time_text; ?>)</p>
-               <p class="head2">Erreichte Punktzahl: 0 von 65</p>
+               <p class="head2">Erreichte Punktzahl: <?php echo $_SESSION['sum']; ?> von 65</p>
                <span id="timer" class="time_cell"></span>
              </div>

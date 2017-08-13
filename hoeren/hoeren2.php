@@ -1,6 +1,5 @@
-<?php $test_part = 'H&ouml;ren Teil 2'; $time_text = 'H&ouml;ren insgesamt 45 Minuten'; ?>
+<?php $page_session = 2; $page = 'horen_2'; $test_part = 'H&ouml;ren Teil 2'; $time_text = 'H&ouml;ren insgesamt 45 Minuten'; ?>
 <?php include("../partials/header.php") ?>
-<?php echo $_SESSION['q1'];echo $_SESSION['q2'];echo $_SESSION['q3'];echo $_SESSION['q3']; ?>
      <div class="clear"></div>
      <div class="decoration add_cell"></div>
 

@@ -1,6 +1,5 @@
-<?php $test_part = 'Lesen Teil 5'; $time_text = 'Lesen insgesamt 45 Minuten'; ?>
+<?php $page_session = 9; $page = 'lesen_5'; $test_part = 'Lesen Teil 5'; $time_text = 'Lesen insgesamt 45 Minuten'; ?>
 <?php include('../partials/header.php'); ?>
-<?php echo $_SESSION['q37'];echo $_SESSION['q38'];echo $_SESSION['q39']; ?>
       <div class="clear"></div>
       <div class="decoration"></div>
      <div class="explain_box head_title">

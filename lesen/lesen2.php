@@ -1,7 +1,5 @@
-<?php $test_part = 'Lesen Teil 2';$time_text = 'Lesen insgesamt 45 Minuten'; ?>
+<?php $page_session = 6; $page = 'lesen_2'; $test_part = 'Lesen Teil 2';$time_text = 'Lesen insgesamt 45 Minuten'; ?>
 <?php include("../partials/header.php"); ?>
-<?php echo $_SESSION['q21'];echo $_SESSION['q22'];echo $_SESSION['q23'];echo $_SESSION['q24'];
-echo $_SESSION['q25']; ?>
 <div class="clear"></div>
 <div class="decoration"></div>
 <div class="explain_box head_title add_cell">
@@ -154,7 +152,17 @@ echo $_SESSION['q25']; ?>
 </form>
 </div>
 <div class="l1_right">
- <img src="../images/a.png" alt="img" class="responsive-image">
+<div class="button_cell">
+       <button id="button1" class="bt_border">a</button>
+       <button id="button2" class="bt_border">b</button>
+       <button id="button3" class="bt_border">c</button>
+       <button id="button4" class="bt_border">d</button>
+       <button id="button5" class="bt_border">e</button>
+       <button id="button6" class="bt_border">f</button>
+       <button id="button7" class="bt_border">g</button>
+       <button id="button8" class="bt_border">h</button>
+      </div>
+ <img src="../images/a.png" alt="img" class="responsive-image" id="image">
 </div>
 </div>
 </div>

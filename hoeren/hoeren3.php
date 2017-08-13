@@ -1,7 +1,5 @@
-<?php $test_part = 'H&ouml;ren Teil 3'; $time_text = 'H&ouml;ren insgesamt 45 Minuten'; ?>
+<?php $page_session = 3; $page = 'horen_3'; $test_part = 'H&ouml;ren Teil 3'; $time_text = 'H&ouml;ren insgesamt 45 Minuten'; ?>
 <?php include("../partials/header.php") ?>
-<?php echo $_SESSION['q5'];echo $_SESSION['q6'];echo $_SESSION['q7'];echo $_SESSION['q8'];
-echo $_SESSION['q9']; ?>
 
 <div class="clear"></div>
 <div class="decoration add_cell"></div>
@@ -174,7 +172,8 @@ echo $_SESSION['q9']; ?>
         data:  $( "form" ).serialize(),
 
         success: function(data){
-          console.log('value');
+          var x = <?php echo json_encode($_SESSION['q10']); ?>;
+          console.log(x);
         }
       });
     }
@@ -189,8 +188,10 @@ if(isset($_POST['q10']))
 {
   if($_POST['q10'] == 2){
     $_SESSION['q10']=1;
+    alert('There are no fields to generate a report');
   }else{
     $_SESSION['q10']=0;
+    alert('There are no fields to generate a report');
   }
 }
 

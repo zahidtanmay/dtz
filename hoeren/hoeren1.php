@@ -1,7 +1,6 @@
-<?php $test_part = 'H&ouml;ren Teil 1';$time_text = 'H&ouml;ren insgesamt 45 Minuten'; ?>
+<?php $page_session = 1;  $page = 'horen_1'; $test_part = 'H&ouml;ren Teil 1';$time_text = 'H&ouml;ren insgesamt 45 Minuten'; ?>
 <?php include("../partials/header.php"); ?>
-
-
+<?php ?>
 
 <div class="clear"></div>
 <div class="decoration add_cell"></div>
@@ -98,12 +97,14 @@
 
   $(function(){
     $( "select" ).change(function(){
+      var str = $("form").serialize();
+      console.log(str);
       jQuery.ajax({
         type: "POST",
-        data:  $( "form" ).serialize(),
+        data:  {str: str},
 
-        success: function(data){
-          console.log('value');
+        success: function(){
+          console.log(str);
         }
       }); 
     });
@@ -113,7 +114,9 @@
 </script>
 
 <div id="results"></div>
+
 <?php
+
 if(isset($_POST['q1']))
 {
   if($_POST['q1'] == 3){
@@ -149,7 +152,6 @@ if(isset($_POST['q4']))
     $_SESSION['q4']=0;
   }
 }
-
 
 ?>
 

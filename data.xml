@@ -65,6 +65,9 @@
   <solution>3</solution>
 </question>
 
+
+
+
 <question id='110' type='single' points='1'>
   <qtext>Das Gespräch findet in Norwegen statt.</qtext>
   <choice>Richtig</choice>
@@ -118,6 +121,10 @@
   <solution>2</solution>
 </question>
 
+
+
+
+
 <question id='118' type='single' points='1'>
 	<choice>a</choice>
 	<choice>b</choice>
@@ -148,6 +155,10 @@
   <solution>4</solution>
 </question>
 
+
+
+
+
 <question id='121' type='single' points='1'>
 	<choice>18</choice>
 	<choice>19</choice>
@@ -161,6 +172,10 @@
 	<choice>20</choice>
   <solution>3</solution>
 </question>
+
+
+
+
 
 <question id='21' type='single' points='1'>
   <qtext>Die Gruppe Ztohoven</qtext>
@@ -197,6 +212,8 @@
   <choice>c anderes Zimmer</choice>
   <solution>3</solution>
 </question>
+
+
 
 
 <question id='26' type='single' points='1'>
@@ -265,6 +282,8 @@
   <solution>9</solution>
 </question>
 
+
+
 <question id='211' type='single' points='1'>
   <qtext></qtext>
   <choice>Richtig</choice>
@@ -306,6 +325,9 @@
 </question>
 
 
+
+
+
 <question id='217' type='single' points='1'>
   <qtext></qtext>
   <choice>Richtig</choice>
@@ -324,6 +346,8 @@
   <choice>Falsch</choice>
   <solution>1</solution>
 </question>
+
+
 
 
 <question id='220' type='gap' points='1'>
