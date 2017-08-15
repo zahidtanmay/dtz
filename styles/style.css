@@ -27,7 +27,7 @@
 .nor_left { width: 50%; float: left;}
 .left60 { width: 55%; float: left;}
 .right40 { width: 44%; float: right;}
-.index3{ height: 13%; margin-top: 20px}
+.index3{ height: 13%;}
 .title_cell {  height: 14%;  }
 .l3_he{line-height: 20px;}
 .l2_cell{ width: 100%; height: 23%;}
@@ -389,8 +389,13 @@
 /*end*/
 
 .end_p  { line-height: 18px;font-size: 12px;}
+
 .end_ul { line-height: 18px; margin-top: -18px;}
+
 .end_li { line-height: 20px}
+
+.end_p li {margin: 0px !important;}
+
 .start_btn
 {
     margin-top: 10px;
@@ -1752,10 +1757,10 @@
     text-align:center;
     color:#FFFFFF;
 }
-
 .xxx p{
-    line-height: 22px;
+    line-height: 17px;
 }
+
 
 .bubble
         {
@@ -1776,7 +1781,7 @@
 
 
 .responsive-image {
-    height: 85% !important;
+    height: 80% !important;
 }
 
 

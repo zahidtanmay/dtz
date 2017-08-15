@@ -66,6 +66,8 @@
   <script>
   $(function(){
     function showValues() {
+      var str = $("form").serialize();
+      console.log(str);
       jQuery.ajax({
         type: "POST",
         data:  $( "form" ).serialize(),

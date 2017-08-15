@@ -1,6 +1,6 @@
 $(window).load(function() { 
-	$("#status").fadeOut(); // will first fade out the loading animation
-	$("#preloader").delay(100).fadeOut("slow"); // will fade out the white DIV that covers the website.
+	$("#status").delay(3000).fadeOut("slow"); // will first fade out the loading animation
+	$("#preloader").delay(3000).fadeOut("slow"); // will fade out the white DIV that covers the website.
 });
 
 
@@ -361,7 +361,7 @@ $( document ).ready(function() {
 
     $(function() {
         $(".preload-image").lazyload({
-            threshold : 200,
+            threshold : 1000,
             effect : "fadeIn"
         });
         $("img.lazy").show().lazyload();

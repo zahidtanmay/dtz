@@ -1,13 +1,16 @@
-<?php $page_session = 1;  $page = 'horen_1'; $test_part = 'H&ouml;ren Teil 1';$time_text = 'H&ouml;ren insgesamt 45 Minuten'; ?>
+<?php $page_session=1; $page = 'horen_1'; $test_part = 'H&ouml;ren Teil 1';$time_text = 'H&ouml;ren insgesamt 45 Minuten'; ?>
 <?php include("../partials/header.php"); ?>
-<?php ?>
+
+
 
 <div class="clear"></div>
 <div class="decoration add_cell"></div>
 <div class="explain_box cell_hoeren1">
+
  <p>Sie h&ouml;ren vier Ansagen. Zu jeder Ansage gibt es eine Aufgabe. Welche L&ouml;sung passt am besten?
   <br>W&auml;hlen Sie Ihre L&ouml;sungen f&uuml;r die Aufgaben 1 bis 4 im Listenfeld. Vorsicht: Was Sie hier sehen, muss nicht die korrekte L&ouml;sung sein! </p>
 </div>
+
 <div class="cle$test_part = 'H&ouml;ren Teil 1';ar"></div>
 <div class="decoration"></div>
 <!--Audio Play 14%-->
@@ -24,8 +27,9 @@
 <div class="decoration"></div>
 
 
-<form id="a" action="" method="post">
-  <div class="title_cell bg-1">
+
+
+  <div class="title_cell bg-1" >
    <h4 class="color-red-dark title_header">Beispiel</h4>
    <p class="question_cell1">Was soll Frau Baumgart tun?</p>
    <select action="php/contact.php" id="qh1" class="select_cell1">
@@ -34,6 +38,7 @@
     <option value="3">&nbsp; Zu einem Kennenlerntag kommen.</option>
   </select>
 </div>
+<form id="a" action="" method="post">
 <div class="clear"></div>
 <div class="decoration"></div>
 <!--1 question -->
@@ -97,14 +102,12 @@
 
   $(function(){
     $( "select" ).change(function(){
-      var str = $("form").serialize();
-      console.log(str);
       jQuery.ajax({
         type: "POST",
-        data:  {str: str},
+        data:  $( "form" ).serialize(),
 
-        success: function(){
-          console.log(str);
+        success: function(data){
+          console.log('value');
         }
       }); 
     });
@@ -114,9 +117,7 @@
 </script>
 
 <div id="results"></div>
-
 <?php
-
 if(isset($_POST['q1']))
 {
   if($_POST['q1'] == 3){
@@ -152,6 +153,7 @@ if(isset($_POST['q4']))
     $_SESSION['q4']=0;
   }
 }
+
 
 ?>
 

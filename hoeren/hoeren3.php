@@ -28,10 +28,10 @@
 <div class="cell_hoeren1 bg-1">
   <h4 class="color-red-dark">Beispiel</h4>
   <!--Title1 question-->
-  <div class="half_left">
+  <div class="half_left" >
    <p class="cell_left1">Frau Erdmann ist die Chefin von Herrn Becker.</p>
 
-   <nav class="segmented l3_seg">
+   <nav class="segmented l3_seg" >
     <input type="radio" name="q31" value="1" id="30a">
     <label for="30a">Richtig</label>
     <input type="radio" name="q31" value="2" id="30b">
@@ -48,8 +48,10 @@
 </select>
 </div>
 </div>
+
 <div class="clear"></div>
 <div class="decoration"></div>
+
 <form>
   <!--Cell1 question -->
   <div class="cell_hoeren1">
@@ -188,10 +190,10 @@ if(isset($_POST['q10']))
 {
   if($_POST['q10'] == 2){
     $_SESSION['q10']=1;
-    alert('There are no fields to generate a report');
+    
   }else{
     $_SESSION['q10']=0;
-    alert('There are no fields to generate a report');
+    
   }
 }
 

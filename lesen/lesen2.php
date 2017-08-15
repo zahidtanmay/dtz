@@ -3,19 +3,18 @@
 <div class="clear"></div>
 <div class="decoration"></div>
 <div class="explain_box head_title add_cell">
-  <p>
+  <p style="line-height: 20px;">
   Lesen Sie die Situationen 26 bis 30 und die Anzeigen a bis h. Finden Sie f&uuml;r jede Situation die passende Anzeige.
   <br>Markieren Sie Ihre L&ouml;sungen f&uuml;r die Aufgaben 26 bis 30. F&uuml;r eine Aufgabe gibt es keine L&ouml;sung. W&auml;hlen Sie in diesem Fall X.
 </p>
 </div>
 <div class="clear"></div>
 <div class="decoration"></div>
-<div style="height: 82%">
+<div >
   <!-- lesen0 question -->
   <div class="l1_left">
 
    <form class="xxx">
-
 
      <div class="clear"></div>
      <div class="decoration"></div>
